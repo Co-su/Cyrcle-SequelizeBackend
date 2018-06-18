@@ -1,0 +1,45 @@
+{
+ 
+    "development": {
+ 
+        "username": "cosu",
+ 
+        "password": "csulli0892",
+ 
+        "database": "cyrcle_appdb",
+ 
+        "host": "127.0.0.1",
+ 
+        "dialect": "mysql"
+ 
+    },
+ 
+    "test": {
+ 
+        "username": "cosu",
+ 
+        "password": null,
+ 
+        "database": "cyrcle_appdb",
+ 
+        "host": "",
+ 
+        "dialect": "mysql"
+ 
+    },
+ 
+    "production": {
+ 
+        "username": "",
+ 
+        "password": null,
+ 
+        "database": "",
+ 
+        "host": "127.0.0.1",
+ 
+        "dialect": "mysql"
+ 
+    }
+ 
+}

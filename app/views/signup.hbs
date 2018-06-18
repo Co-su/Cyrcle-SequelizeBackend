@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title></title>
+</head>
+ 
+<body>
+    <form id="signup" name="signup" method="post" action="/signup">
+        <label for="email">Email Address</label>
+        <input class="text" name="email" type="email" />
+        <label for="firstname">Firstname</label>
+        <input name="firstname" type="text" />
+        <label for="lastname">Lastname</label>
+        <input name="lastname" type="text" />
+        <label for="password">Password</label>
+        <input name="password" type="password" /><br>
+       
+        <label for="serviceAddress">Address</label>
+        <input name="serviceAddress" type="text" /><br>
+       
+        <label for="accountType">Account Type</label>
+        <input type="radio" name="accountType" value="Residential" checked /> Residential
+        <input type="radio" name="accountType" value="Commercial" /> Commercial<br>
+
+        <label for="dwelling">Dwelling</label>
+        <input type="radio" name="dwelling" value="Home" checked /> Home
+        <input type="radio" name="dwelling" value="Apartment/Highrise" /> Apartment/Highrise<br>
+
+        <label for="plan">Plan</label>
+        <input type="radio" name="plan" value="Weekly" checked /> Weekly - $29
+        <input type="radio" name="plan" value="Bi-Weekly" /> Bi-Weekly - $19<br>
+
+        <label for="binType">binType</label>
+        <input type="radio" name="binType" value="Bin" checked /> Bin
+        <input type="radio" name="binType" value="Bin + Rollcart" /> Bin + Rollcart<br>
+
+{{!-- Hidden Info Start --}}
+
+        <input type="hidden" name="custId" value="1a1a1a" />
+        <input type="hidden" name="accountStatus" value="Enabled" />
+        <input type="hidden" name="totalPickups" value="0" />
+        <input type="hidden" name="daysUsing" value="1" />
+        <input type="hidden" name="totalPoundage" value="0" />
+        <input type="hidden" name="scrapPoints" value="0" />
+{{!-- Hidden Info End  --}}
+
+        <input class="btn" type="submit" value="Sign Up" />
+    </form>
+ 
+</body>
+ 
+</html>

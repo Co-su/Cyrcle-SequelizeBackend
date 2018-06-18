@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>CYRCLE>>Dashboard</title>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+ 
+<body>
+    <h1 id="userHandle">Welcome, {{ user.firstname }}</h1><br>
+    <h3>You've signed up for a {{ user.plan }} plan, with a {{ user.binType }}.</h3><br>
+    <h3>We'll pick up your compost from your {{ user.dwelling }}, located at {{ user.serviceAddress }}.</h3><br>
+    <h3>Assigned pickup day: {{ user.pickupDay }}</h3><br>
+    <h3>First pickup date: {{ user.firstPickupDate }} </h3>
+    <h3>Next pickup date: {{ user.nextPickupDate }} </h3>
+    <h4>Total pickups: {{ user.totalPickups }}</h4><br>
+    <h4>Total poundage: {{ user.totalPoundage }}</h4><br>
+    <h3>Scrap Points: {{ user.scrapPoints }}</h3><br>
+    <h5>Days using Cyrcle: {{ user.daysUsing }}</h><br>
+
+    <script>
+        //console.log('user', user);
+        let username = $('#userHandle').text();
+        console.log('username', username);
+    </script>
+    <h3>Nice!</h3>
+</body>
+ 
+</html>
