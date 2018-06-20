@@ -10,7 +10,7 @@ exports.signin = function(req, res) {
  
 exports.dashboard = function(req, res) {
 	console.log('req.user', req.user);
-	res.locals.user = user;
+	// res.locals.user = user;
     res.render('dashboard');
 }
 

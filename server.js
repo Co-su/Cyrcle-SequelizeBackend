@@ -29,6 +29,11 @@ app.get('/', function(req, res) {
     res.send('Landing Page! Add /signup or /signin to proceed.');
 });
 
+app.use(function(req, res, next) {
+    res.locals.user = req.user;
+    next();
+  });
+
 // app.get('/', function(req, res) {
 //     res.render({ user: req.user });
 //   });
